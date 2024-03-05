@@ -8,6 +8,7 @@ const Portfolio = () => {
       setPortfolio(res.data);
     });
   }, []);
+  // console.log(portfolio);
   return (
     <div className="w-5/6 mx-auto">
       <div className="text-center my-20">
