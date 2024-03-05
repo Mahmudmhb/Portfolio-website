@@ -1,11 +1,8 @@
 import Bannar from "../../Components/Bannar/Bannar";
 import Portfolio from "../../Components/Portfolio/Portfolio";
-import Resume from "../../Components/Resume/Resume";
 import Skills from "../../Components/Skills/Skills";
 import WorkPlan from "../../Components/WorkPlan/WorkPlan";
-import Professional from "../../Components/Professional/Professional";
 import Contact from "../../Components/Contact/Contact";
-import Footer from "../../Components/Footer/Footer";
 import SkillsProgress from "../../Components/Skills/SkillsProgress";
 
 const Home = () => {
@@ -14,11 +11,9 @@ const Home = () => {
       <Bannar></Bannar>
       <Skills></Skills>
       <WorkPlan></WorkPlan>
-      {/* <Service></Service> */}
       <SkillsProgress></SkillsProgress>
       <Portfolio></Portfolio>
-      <Resume></Resume>
-      {/* <Professional></Professional> */}
+
       <Contact></Contact>
     </div>
   );

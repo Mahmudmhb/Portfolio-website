@@ -12,7 +12,7 @@ const Bannar = () => {
             Hello👋,
             <span className="text-[#ff014f]">I`m Mahmud</span>
           </h1>
-          <h3 className="text-6xl font-extrabold text-[#8954f7] tracking-wid  ">
+          <h3 className="md:text-6xl font-extrabold text-[#8954f7] tracking-wid  ">
             A Programmer Specializing in Web Development.
           </h3>
           <p className="text-2xl">

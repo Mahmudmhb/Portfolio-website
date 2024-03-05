@@ -15,12 +15,12 @@ const WorkPlan = () => {
         <span className="my-5 mx-4 font-thin border-[#ff014f] border  rounded-sm px-5 py-2  text-[#ff014f]">
           FEATURES
         </span>
-        <h3 className="  border-b py-5 border-white text-5xl my-5  text-[#c4cfde] font-extrabold">
+        <h3 className="  border-b py-5 mb-5 pb-5 border-white text-5xl my-5  text-[#c4cfde] font-extrabold">
           What I Do
         </h3>
       </div>
       <div className="md:grid md:grid-cols-3 sm:flex-row sm:justify-center gap-5">
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <FaLaptopCode className="text-6xl text-[#ff014f]"></FaLaptopCode>
@@ -32,7 +32,7 @@ const WorkPlan = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <LiaAmericanSignLanguageInterpretingSolid className="text-6xl text-[#ff014f]"></LiaAmericanSignLanguageInterpretingSolid>
@@ -44,7 +44,7 @@ const WorkPlan = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <FaDraftingCompass className="text-6xl text-[#ff014f]"></FaDraftingCompass>
@@ -57,7 +57,7 @@ const WorkPlan = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <FaCode className="text-6xl text-[#ff014f]"></FaCode>
@@ -69,7 +69,7 @@ const WorkPlan = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <FaStarOfDavid className="text-6xl text-[#ff014f]">
@@ -83,7 +83,7 @@ const WorkPlan = () => {
             </p>
           </div>
         </div>
-        <div className="card w-[350px] bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
+        <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
               <FaEarthAmericas className="text-6xl text-[#ff014f]" />

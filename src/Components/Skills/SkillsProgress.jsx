@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee";
 import {
   FaBootstrap,
   FaCss3Alt,
@@ -31,7 +30,7 @@ const SkillsProgress = () => {
           </p>
         </div>
         <div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 justify-between">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 justify-center md:justify-between">
             <div className="text-center my-5">
               <div className="text-center bg-[#140c1c] p-3 rounded-3xl">
                 <FaHtml5 className="text-9xl p-3 hover:p-1  font-extrabold mx-auto text-[#c4cfde] duration-700 "></FaHtml5>
