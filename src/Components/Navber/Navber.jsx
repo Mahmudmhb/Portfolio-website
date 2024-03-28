@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const Navber = () => {
   return (
-    <div className=" border-b">
-      <div className="md:flex justify-between w-5/6 mx-auto  text-white items-center h-20">
-        <div className=" text-white sm:text-center">
-          <h1 className="sm:text-center">Mahmudul hasan</h1>
+    <div className=" border-b ">
+      <div className="flex  justify-between w-5/6 mx-auto  text-white items-center h-20">
+        <div className=" text-white flex items-center">
+          <h1 className="">Mahmudul hasan</h1>
         </div>
-        <ul className="flex   md:justify-between md:gap-10 gap-2  items-center ">
+        <ul className="md:flex hidden  md:justify-between md:gap-10 gap-2  items-center ">
           <Link>
             {" "}
             <li>home</li>
@@ -16,8 +16,7 @@ const Navber = () => {
             {" "}
             <li>Abouts</li>
           </Link>
-          <Link>
-            {" "}
+          <Link to="/#workplen">
             <li>Skills</li>
           </Link>
           <Link>

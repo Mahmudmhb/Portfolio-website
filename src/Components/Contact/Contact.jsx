@@ -61,7 +61,7 @@ const Contact = () => {
             <div className="flex sm:flex-row  items-center gap-5">
               <Link
                 to={
-                  "https://drive.google.com/file/d/1KUd0U1eV1S9SEAu-aDLh_ljAu5xAdOhn/view?usp=sharing"
+                  "https://drive.google.com/file/d/15h74Lz3EATHkANijnQz9fqLQ71g0K0l_/view?usp=sharing"
                 }
                 target="_blank"
               >
@@ -73,12 +73,22 @@ const Contact = () => {
                 <h1 className="my-2 mx-4 font-thin text-[#ff014f]">
                   FIND WITH ME
                 </h1>
-                <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
-                  <FaGithub className=" text-2xl" />
-                </button>
-                <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
-                  <FaLinkedinIn className=" text-2xl" />
-                </button>
+                <Link
+                  to="https://github.com/Mahmudmhb/lota-online-shop"
+                  target="blank"
+                >
+                  <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
+                    <FaGithub className=" text-2xl" />
+                  </button>
+                </Link>
+                <a
+                  href="https://www.linkedin.com/in/mahmudul-hasan-6b2bb9226/"
+                  target="blank"
+                >
+                  <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
+                    <FaLinkedinIn className=" text-2xl" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>

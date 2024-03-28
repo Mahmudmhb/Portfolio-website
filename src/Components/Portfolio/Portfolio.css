@@ -1,0 +1,26 @@
+.image-container {
+    width: 300px;
+    /* Or the width you desire */
+    height: 300px;
+    /* Or the height you desire */
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    transition: top 0.5s ease;
+    /* Smooth transition for moving image */
+    width: 100%;
+    /* Adjust as per your requirement */
+    height: auto;
+    /* Adjust height automatically */
+}
+
+.image-container:hover img {
+    top: 100%;
+    /* Move image to the bottom */
+    transform: translateY(-100%);
+    /* Adjust position to fully display the image */
+}

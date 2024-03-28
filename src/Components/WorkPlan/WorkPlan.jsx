@@ -10,7 +10,7 @@ import { LiaAmericanSignLanguageInterpretingSolid } from "react-icons/lia";
 
 const WorkPlan = () => {
   return (
-    <div className="w-5/6 mx-auto mb-20 ">
+    <div id="/#workplen" className="w-5/6 mx-auto mb-20 ">
       <div className="my-10">
         <span className="my-5 mx-4 font-thin border-[#ff014f] border  rounded-sm px-5 py-2  text-[#ff014f]">
           FEATURES
@@ -19,7 +19,7 @@ const WorkPlan = () => {
           What I Do
         </h3>
       </div>
-      <div className="md:grid md:grid-cols-3 sm:flex-row sm:justify-center gap-5">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 sm:flex-row sm:justify-center gap-5">
         <div className="card md:w-[350px] mb-5 bg-[#202327]  hover:-mt-5 duration-1000 hover:bg-[#010101] shadow-2xl">
           <div className="card-body  text-[#c4cfde] hover:text-white">
             <span>
