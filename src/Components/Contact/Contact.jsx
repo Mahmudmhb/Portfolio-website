@@ -6,19 +6,24 @@ import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
-  // const emailname = form.current.name.value;
-  // const email = form.current.email.value;
-  // console.log(emailname, email);
-  // const subjcet = form.current.subjcet.value;
-  // const message = form.current.message.value;
-  // const current = { emailname, email, subjcet, message };
-  // console.log(current);
   // console.log(currentemail);
+
+  const TemplateID = "template_3lsztov";
+  const EmailServices = "service_ov1golo";
+
   const sendEmail = (event) => {
+    console.log("clicking the post", form.current);
     event.preventDefault();
-    // console.log(event);
+    const emailname = form.current.name.value;
+    const email = form.current.email.value;
+    // console.log(emailname, email);
+    const subjcet = form.current.subject.value;
+    const message = form.current.message.value;
+    const userEmail = { emailname, email, subjcet, message };
+    console.log(userEmail);
+
     emailjs
-      .sendForm("service_ov1golo", "template_3lsztov", form.current, {
+      .sendForm(EmailServices, TemplateID, form.current, {
         publicKey: "eNMOg_xGl5v-nx2Wy",
       })
       .then(
@@ -61,7 +66,7 @@ const Contact = () => {
             <div className="flex sm:flex-row  items-center gap-5">
               <Link
                 to={
-                  "https://drive.google.com/file/d/15h74Lz3EATHkANijnQz9fqLQ71g0K0l_/view?usp=sharing"
+                  "https://drive.google.com/file/d/1kzjHo3xuLEO7S850ndB413YcWz_gtLlm/view?usp=sharing"
                 }
                 target="_blank"
               >
@@ -73,10 +78,7 @@ const Contact = () => {
                 <h1 className="my-2 mx-4 font-thin text-[#ff014f]">
                   FIND WITH ME
                 </h1>
-                <Link
-                  to="https://github.com/Mahmudmhb/lota-online-shop"
-                  target="blank"
-                >
+                <Link to="https://github.com/Mahmudmhb/" target="blank">
                   <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
                     <FaGithub className=" text-2xl" />
                   </button>
@@ -102,24 +104,28 @@ const Contact = () => {
                 placeholder="Name"
                 name="name"
                 className="bg-[#1d1d1d] w-full rounded py-3 text-white"
+                required
               />
               <input
                 type="email"
                 placeholder="Email"
                 name="email"
                 className="bg-[#1d1d1d] w-full rounded  py-3 text-white"
+                required
               />
             </div>
             <input
               type="text"
               placeholder="Subject"
               name="subject"
+              required
               className="bg-[#1d1d1d] w-full  py-3 rounded text-white"
             />
             <textarea
               name="message"
               id=""
               rows="5"
+              required
               //   cols="10"
               placeholder="Messages"
               className="bg-[#1d1d1d]   w-full rounded text-white"

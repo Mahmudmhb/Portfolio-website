@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import mahmud from "../../assets/Mahmudul Hasan.jpg";
+import mahmud from "../../assets/profile.png";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import Typewriter from "typewriter-effect";
@@ -11,12 +11,12 @@ const Bannar = () => {
         <div className="space-y-5 my-20  md:w-1/2 ">
           <h1 className=" font-extrabold   tracking-widest	  text-4xl text-[#c4cfde] ">
             {" "}
-            Hello👋,
+            Hello👋 I`m Mahmud,
             <span className="text-[#ff014f]">
               {" "}
               <Typewriter
                 options={{
-                  strings: ["I`m Mahmud", "Full Stack Developer"],
+                  strings: ["MERN Stack Developer"],
                   autoStart: true,
                   loop: true,
                   cursor: " ",
@@ -34,7 +34,7 @@ const Bannar = () => {
           <div className="flex sm:flex-row  items-center gap-5">
             <Link
               to={
-                "https://drive.google.com/file/d/15h74Lz3EATHkANijnQz9fqLQ71g0K0l_/view?usp=sharing"
+                "https://drive.google.com/file/d/1kzjHo3xuLEO7S850ndB413YcWz_gtLlm/view?usp=sharing"
               }
               target="_blank"
             >
@@ -46,10 +46,7 @@ const Bannar = () => {
               <h1 className="my-2 mx-4 font-thin text-[#ff014f]">
                 FIND WITH ME
               </h1>
-              <Link
-                to="https://github.com/Mahmudmhb/lota-online-shop"
-                target="blank"
-              >
+              <Link to="https://github.com/Mahmudmhb/" target="blank">
                 <button className="p-2 rounded-full hover:bg-[#8954f7] text-[#8954f7] border-[#8954f7] hover:text-white duration-500   border">
                   <FaGithub className=" text-2xl" />
                 </button>

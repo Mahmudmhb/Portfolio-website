@@ -8,26 +8,34 @@ const Navber = () => {
           <h1 className="">Mahmudul hasan</h1>
         </div>
         <ul className="md:flex hidden  md:justify-between md:gap-10 gap-2  items-center ">
-          <Link>
+          <Link to="/">
             {" "}
             <li>home</li>
           </Link>
-          <Link>
+          <Link to="/abouts-us">
             {" "}
             <li>Abouts</li>
           </Link>
-          <Link to="/#workplen">
+          <Link to="/skills">
             <li>Skills</li>
           </Link>
-          <Link>
+          <Link to="/projects">
             {" "}
             <li>Projects</li>
           </Link>
-          <Link>
+          <Link to="/contact-us">
             {" "}
             <li>Contact</li>
           </Link>
         </ul>
+        <div>
+          <Link to="/dashboard">
+            {" "}
+            <button className=" bg-blue-600 text-white px-3 py-1 rounded-lg shadow-xl hover:bg-blue-800 duration-300 delay-100">
+              Dashboard
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
