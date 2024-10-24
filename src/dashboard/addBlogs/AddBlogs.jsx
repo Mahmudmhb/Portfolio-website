@@ -1,5 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { AxiosInstance } from "../../Provider/useAxios";
+import { uploadImage } from "../../Components/iamge/imageBD";
+import { Toast } from "flowbite-react";
 
 const AddBlogs = () => {
   const [imagePreview, setImagePreview] = useState(null);
@@ -10,8 +13,24 @@ const AddBlogs = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log("Form data:", data);
+
+    if (data.image && data.image.length > 0) {
+      try {
+        const file = data.image[0];
+        const imageUrl = await uploadImage(file);
+        data.image = imageUrl;
+      } catch (error) {
+        Toast.error(error.data.message, { duration: 3000 });
+        return;
+      }
+      const res = await AxiosInstance.post("/blogs/create", data);
+      console.log(res.data);
+    } else {
+      // No image uploaded
+      data.image = null;
+    }
   };
 
   const handleImageChange = (e) => {

@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navber = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div className=" border-b ">
       <div className="flex  justify-between w-5/6 mx-auto  text-white items-center h-20">
@@ -16,8 +19,8 @@ const Navber = () => {
             {" "}
             <li>Abouts</li>
           </Link>
-          <Link to="/skills">
-            <li>Skills</li>
+          <Link to="/blogs">
+            <li>Blogs</li>
           </Link>
           <Link to="/projects">
             {" "}
@@ -28,14 +31,29 @@ const Navber = () => {
             <li>Contact</li>
           </Link>
         </ul>
-        <div>
-          <Link to="/dashboard">
-            {" "}
-            <button className=" bg-blue-600 text-white px-3 py-1 rounded-lg shadow-xl hover:bg-blue-800 duration-300 delay-100">
-              Dashboard
-            </button>
-          </Link>
-        </div>
+        {user?.email ? (
+          <>
+            <div>
+              <Link to="/dashboard">
+                {" "}
+                <button className=" my-3 px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500 py-1  rounded-3xl border border-[#8954f7]">
+                  Dashboard
+                </button>
+              </Link>
+            </div>
+          </>
+        ) : (
+          <>
+            <div>
+              <Link to="/Login">
+                {" "}
+                <button className=" my-3 uppercase px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500  py-1 rounded-3xl border border-[#8954f7]">
+                  Login
+                </button>
+              </Link>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

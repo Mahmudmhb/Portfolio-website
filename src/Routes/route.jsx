@@ -9,6 +9,10 @@ import Portfolio from "../Components/Portfolio/Portfolio";
 import Dashboard from "../dashboard/Dashboard";
 import Admin from "../dashboard/Admin/Admin";
 import AddBlogs from "../dashboard/addBlogs/AddBlogs";
+import Login from "../Pages/LoginPage/Login";
+import SignUp from "../Pages/LoginPage/SignUp";
+import HomePageBlogs from "../Pages/Blogs/HomePageBlogs";
+import AddSkills from "../dashboard/AddSkills/AddSkills";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "blogs",
-        element: <Blogs />,
+        element: <HomePageBlogs />,
       },
       {
         path: "contact-us",
@@ -54,21 +58,17 @@ export const router = createBrowserRouter([
         element: <AddBlogs />,
       },
       {
-        path: "blogs",
-        element: <Blogs />,
-      },
-      {
-        path: "contact-us",
-        element: <Contact />,
-      },
-      {
-        path: "about-us",
-        element: <WorkPlan />,
-      },
-      {
-        path: "projects",
-        element: <Portfolio />,
+        path: "add-skills",
+        element: <AddSkills />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login></Login>,
+  },
+  {
+    path: "/register",
+    element: <SignUp />,
   },
 ]);
