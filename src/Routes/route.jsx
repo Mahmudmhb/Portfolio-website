@@ -13,6 +13,7 @@ import Login from "../Pages/LoginPage/Login";
 import SignUp from "../Pages/LoginPage/SignUp";
 import HomePageBlogs from "../Pages/Blogs/HomePageBlogs";
 import AddSkills from "../dashboard/AddSkills/AddSkills";
+import PortfolioDetails from "../Components/Portfolio/portpolioDetails";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
       {
         path: "projects",
         element: <Portfolio />,
+      },
+      {
+        path: "/portfolio/:id",
+        element: <PortfolioDetails />,
       },
     ],
   },
