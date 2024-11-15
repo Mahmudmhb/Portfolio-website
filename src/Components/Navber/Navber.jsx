@@ -31,24 +31,13 @@ const Navber = () => {
             <li>Contact</li>
           </Link>
         </ul>
-        {user?.email ? (
+        {user?.email && (
           <>
             <div>
               <Link to="/dashboard">
                 {" "}
                 <button className=" my-3 px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500 py-1  rounded-3xl border border-[#8954f7]">
                   Dashboard
-                </button>
-              </Link>
-            </div>
-          </>
-        ) : (
-          <>
-            <div>
-              <Link to="/Login">
-                {" "}
-                <button className=" my-3 uppercase px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500  py-1 rounded-3xl border border-[#8954f7]">
-                  Login
                 </button>
               </Link>
             </div>

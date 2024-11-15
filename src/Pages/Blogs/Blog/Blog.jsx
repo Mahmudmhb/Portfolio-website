@@ -43,7 +43,7 @@ const Blog = ({ item }) => {
       <div className="px-5 pb-5">
         <Link
           to={`/blogdetails/${_id}`}
-          className="my-3 px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500 py-2  rounded-3xl border border-[#8954f7]"
+          className="my-3 px-8 hover:bg-[#8954f7] text-[#8954f7] hover:text-white duration-500 py-1  rounded-3xl border border-[#8954f7]"
         >
           Read More
         </Link>

@@ -18,6 +18,7 @@ const Blogs = () => {
     };
     fetchData();
   }, []);
+  console.log(blogs);
   return (
     <div className="min-h-screen w-5/6 mx-auto text-white flex justify-center items-center">
       <div className="my-10">
